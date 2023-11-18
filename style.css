@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.wrapper-formulario {
+    background-image: url(./assets/viagem-azul.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px  160px;
+}
+
+.cabecalho{
+    display: flex;
+    gap: 8px;
+    font-size: 20px;
+    padding: 10px 0px 10px 160px;
+    color: #eee;
+    background-color: purple;
+}
+
+
+.area-formulario {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #eee;
+}
+
+.header-form {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px;
+    color: #eee;
+    background-color: purple;
+}
+
+.campos-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 16px;
+    color: #6f6b6be8;
+}
+
+.input-area-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-area-texto input {
+    border: solid 1 px #6f6b6be8;
+    padding: 4px;
+}
+
+.area-data-destino {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.area-data-destino input, select{
+    padding: 4px;
+}
+
+.area-data,
+.area-destino {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+.area-data div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.area-destino div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-area-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.input-area-btn input, button{
+    cursor: pointer;
+}
+
+.cama-crianca,
+.preferencias-viagem {
+    display: flex;
+    gap: 24px;
+}
+
+.soli-btn{
+    padding: 10px;
+    font-size: 16px;
+    color: #eee;
+    background-color: purple;
+}
+
+@media screen and (max-width: 750px) {
+   .wrapper-formulario{
+    padding: 60px;
+   }
+}
+
+@media screen and (max-width: 750px) {
+    .wrapper-formulario{
+     padding: 0;
+    }
+
+    .cabecalho{
+        padding: 10px 0px 10px 16px;
+    }
+
+    .header-form{
+        display: none;
+    }
+
+ }
